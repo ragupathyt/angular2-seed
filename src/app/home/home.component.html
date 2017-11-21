@@ -1,26 +1,12 @@
+
 <nav>
-    <a [routerLink]="['/']">
+    <a [routerLink]="['/categories']">
        Categories
       </a>
       |
-        <a [routerLink]="['/about']">
+        <a [routerLink]="['/details']">
         category Lists
       </a>
 </nav>
-<h3>Categories</h3>
-<table>
-    <thead>
-        <tr>
-            <td><a href="#" (click)="setSortBy('name')">Name</a></td>
-            <td><a href="#" (click)="setSortBy('category')">Category</a></td>
-            <td><span><a href="#" (click)="setSortBy('amount')">amount</a></span></td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let category of categories">
-            <td>{{category.name}}</td>
-            <td>{{category.category}}</td>
-            <td><span>${{category.amount}}</span></td>
-        </tr>
-    </tbody>
-</table>
+
+<router-outlet></router-outlet>

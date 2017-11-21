@@ -1,0 +1,33 @@
+table {
+    border: 1px solid #423c3c;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+}
+thead {
+    background: #CCC;
+}
+thead td {
+    padding: 0.5rem 0.3rem;
+}
+
+tbody tr:nth-child(odd) {
+    background: #f0f0f0;
+}
+tbody tr:nth-child(even) {
+    background: #FFF;
+}
+tbody tr td {
+    padding: 0.3rem 0.3rem;
+   
+}
+tr td:not(:last-child) {
+    border-right: 1px solid #c7c7c7;
+}
+thead tr td span,
+tbody tr td span{
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+}

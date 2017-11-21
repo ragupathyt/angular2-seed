@@ -1,0 +1,21 @@
+
+<div>
+    <h3>Category List</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <td><a href="#" (click)="setSortBy('name')">Name</a></td>
+                <td><a href="#" (click)="setSortBy('category')">Category</a></td>
+                <td><span><a href="#" (click)="setSortBy('amount')">amount</a></span></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let category of categories">
+                <td>{{category.name}}</td>
+                <td>{{category.category}}</td>
+                <td><span>${{category.amount}}</span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

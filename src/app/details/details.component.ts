@@ -3,11 +3,11 @@ import { CategoriesService } from '../categories.service';
 import { Http } from '@angular/http';
 
 @Component({
-  selector: 'about',
-  styleUrls: ['./about.component.css'],
-  templateUrl: './about.component.html'
+  selector: 'details',
+  styleUrls: ['./details.component.css'],
+  templateUrl: './details.component.html'
 })
-export class AboutComponent implements OnInit {
+export class DetailsComponent implements OnInit {
 
   categories = [];
   constructor(private _categoriesService: CategoriesService){}
